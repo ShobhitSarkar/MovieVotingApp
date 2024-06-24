@@ -1,0 +1,25 @@
+# What is this app ?
+
+An application for organizing live votes for parties, conferences, meetings and other gatherings
+
+# UI:
+
+- It can be used on a mobile device or any device with a web browser
+- The UI can be projected on a projector or some other large screen
+- This UI shows the results of the voting in real time
+
+
+# Architecture :
+
+It's basically has two applications :
+
+1. Browser app :
+    - Made with React
+    - Provides both user interfaces
+
+# Redux :
+
+In redux, the application state is all stored in a single tree structure (basically all the data related to the
+application is stored in maps and arrays).
+
+

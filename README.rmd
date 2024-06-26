@@ -23,3 +23,33 @@ In redux, the application state is all stored in a single tree structure (basica
 application is stored in maps and arrays).
 
 
+# Actions and Reducers :
+
+- In redux, you don't actually call functions directly
+- there's a layer in between the function and the outside
+
+### Action :
+
+- Simple data structure that describes a change that should occur in the app state
+- Description of function call packaged into a little object
+- Every action has a 'type' attribute and may carry additional attributes
+- A generic function takes any action with the current state and invokes the core function
+- Reducer also needs to be tested
+
+### Working of the reducer :
+
+- It can be used to take the application from one state to the next
+- Given a collection of passt actions, you can reduce that collection into the current state
+- Fulfills the contract of a reduce callback function
+
+### Design Limitations :
+
+- For small applications:
+    - each function takes the whole state of the application
+    - and returns the whole, next state of the application
+
+- For big applications :
+    - If each and every operation in the application needs to be aware of the structure of the whole state, it gets complicated
+    - Make operations work on the smallest piece of the state (modularization)
+        - have the functionality that deals with a given piece of data deals with only that part
+
